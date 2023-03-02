@@ -23,7 +23,7 @@
       },
       "type": "string",
       "required": true
-    },
+   },
     "slug": {
       "pluginOptions": {
         "i18n": {
