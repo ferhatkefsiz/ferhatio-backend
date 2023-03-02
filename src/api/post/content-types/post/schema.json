@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "Post"
+    "displayName": "Post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,7 +24,7 @@
       },
       "type": "string",
       "required": true
-   },
+    },
     "slug": {
       "pluginOptions": {
         "i18n": {
@@ -37,7 +38,12 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos", "audios"],
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -52,14 +58,6 @@
       },
       "type": "text"
     },
-    "body": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
-    },
     "Blocks": {
       "pluginOptions": {
         "i18n": {
@@ -67,7 +65,9 @@
         }
       },
       "type": "dynamiczone",
-      "components": ["blocks.paragraph"]
+      "components": [
+        "blocks.paragraph"
+      ]
     }
   }
 }
